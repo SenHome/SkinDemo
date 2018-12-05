@@ -19,6 +19,7 @@ import com.starry.skindemo.databinding.MainHeaderLayoutBinding;
 import com.starry.skindemo.ui.DiscoverFragment;
 import com.starry.skindemo.ui.FriendsFragment;
 import com.starry.skindemo.ui.MusicFragment;
+import com.starry.skindemo.ui.SkinLibActivity;
 import com.starry.skindemo.ui.adapter.TabFragmentPagerAdapter;
 import com.starry.skindemo.ui.base.BaseActivity;
 import com.starry.skindemo.utils.SPUtils;
@@ -103,6 +104,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding>{
 
     public void goSkinLibActivity(View view){
         mDataBinding.drawLayout.closeDrawer(GravityCompat.START);
+        Intent intent = new Intent(this, SkinLibActivity.class);
+        startActivityForResult(intent,SELECT_SKIN_REQUEST_CODE);
 
     }
 
