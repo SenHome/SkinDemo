@@ -28,7 +28,7 @@ public abstract class BaseFragment<VDB extends ViewDataBinding> extends Fragment
         loadData();
     }
 
-    @Nullable
+
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(getLayoutId(),null);

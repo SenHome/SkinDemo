@@ -1,5 +1,6 @@
 package com.starry.skindemo.ui;
 
+import com.starry.skindemo.R;
 import com.starry.skindemo.ui.base.BaseFragment;
 
 /**
@@ -9,7 +10,7 @@ import com.starry.skindemo.ui.base.BaseFragment;
 public class MusicFragment extends BaseFragment {
     @Override
     protected int getLayoutId() {
-        return 0;
+        return R.layout.fragment_music;
     }
 
     @Override

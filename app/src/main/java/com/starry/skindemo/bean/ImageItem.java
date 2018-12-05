@@ -5,17 +5,16 @@ package com.starry.skindemo.bean;
  */
 
 public class ImageItem {
-
-    public String Title;
-    public String subTitle;
-    private int image;
-
     public ImageItem() {
     }
 
-    public ImageItem(String title, String subTitle, int image) {
-        Title = title;
-        this.subTitle = subTitle;
+    public ImageItem(String title, String subtitle, int image) {
+        this.title = title;
+        this.subtitle = subtitle;
         this.image = image;
     }
+
+    public String title;
+    public String subtitle;
+    public int image;
 }
